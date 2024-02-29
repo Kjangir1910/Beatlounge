@@ -1,0 +1,755 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+/* Navbar */
+
+/* Navbar background color and height */
+.navBar {
+    background-color: #333; /* Dark gray */
+    height: 80px; /* Adjust height as needed */
+    position: sticky;
+    top:0;
+    z-index: 1;
+    box-shadow: 0px 2px 58px 0px;
+
+    
+}
+
+/* Centering the logo */
+.LogoNav img {
+    height: 100%; /* Make the logo fill the height of the navbar */
+    margin: 0 auto; /* Center the logo horizontally */
+    display: block; /* Ensure the image is displayed as a block element */
+}
+
+
+.ToggleNav {
+    
+    background-color: aliceblue;
+    
+}
+
+/* Navbar links */
+.navLink {
+    display: flex;
+    align-items: center; /* Center the links vertically */
+    justify-content: space-between; /* Distribute links evenly */
+    width: 50%; /* Adjust the width of the links */
+}
+
+/* Styling individual links */
+.navLink a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove default underline */
+    padding: 0 10px; /* Add spacing around links */
+    font-size: 16px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    text-decoration: underline;
+}
+
+
+/* Hover effect on links */
+.navLink a:hover {
+    color: lightgray; /* Change text color on hover */
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: #333;
+    width: 100%;
+    box-shadow: 0px 2px 58px 0px;
+    /* margin-bottom: 90px; */
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+
+}
+
+.Rows {
+   display: flex !important;
+   flex-direction: row;
+   width: 100%;
+    justify-content: center;
+
+}
+
+.Footer-a {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+.Footer-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Footer-b a, .Footer-c a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove default underline */
+    padding: 0 10px; /* Add spacing around links */
+    font-size: 16px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    text-decoration: underline;
+}
+
+
+.Footer-b a, .Footer-c a  :hover {
+    color: lightgray;
+}
+
+.Footer-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Home Section */
+
+.homecontainer {
+    background-color: #333;
+    
+}
+
+/* Overview Section */
+.overview {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    padding-top: 40px;
+    justify-content: center;  
+}
+
+.main-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding-right: 100px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.main-button {
+    width: 150px;
+    font-weight: 500;
+}
+
+
+/* SMS Section */
+.sms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sms-logo {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.sms {
+    @media (max-width: 767px) {
+        .sms {
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    
+        .sms-logo {
+            margin-bottom: 20px; /* Adjust spacing between logos */
+            padding: 0; /* Reset padding */
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
+/* Specification Section */
+/* .specs {
+    display: flex;
+    flex-direction: column;
+   margin-top: 60px; 
+   width: 100%;
+   
+}
+
+.specs-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.specs-list  {
+    display: flex;
+    width: 50%;
+
+    padding-left: 330px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+} 
+
+.specs-img {
+    display: flex;
+    width: 50%;
+    
+    align-items: center;
+    justify-content: center;
+    margin-right: -350px;
+} */
+
+
+.specs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.specs-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specs-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.specs-list .blutooth,
+.specs-list .battery,
+.specs-list .charger,
+.specs-list .mike {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.specs-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .specs-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .specs-list .blutooth,
+    .specs-list .battery,
+    .specs-list .charger,
+    .specs-list .mike {
+        width: 100%;
+    }
+}
+
+.case {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.case-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.case-main {
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.case-left {
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+
+}
+
+.case-right {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 10px; */
+}
+
+.case-button {
+    width: 150px;
+    font-weight: 500;
+}
+
+.immense {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    padding-bottom: 70px;
+
+
+}
+
+.immense-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.immense-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.immense-button {
+    width: 150px;
+    font-weight: 500;
+}
+
+h1, h3, p {
+     color: aliceblue;
+}
+
+/* About Section */
+
+.aboutdiv {
+  
+    padding-right: 35px;
+    background-color: #333;
+    width: 100%;
+    padding-left: 35px;
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+
+h2 {
+    color: rgba(128, 128, 128, 0.986);
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.blogs {
+    padding-right: 35px;
+    background-color: #333;
+    width: 100%;
+    padding-left: 35px;
+    padding-bottom: 90px;
+    padding-top: 70px;
+}
+
+
+/* Login page */
+
+.Login {
+    background-color: #333;
+
+}
+
+.Login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.l-heading  h4 {
+    color: rgba(15, 231, 247, 0.973);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+   margin-top: 30px;
+   
+   
+}
+
+.l-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: aliceblue;
+    border: whitesmoke solid;
+    border-radius: 20px;
+    padding: 80px 30px 80px 30px; 
+    box-shadow:  5px 8px 5px 8px whitesmoke;
+    margin-bottom: 150px;
+    margin-top: 80px;
+    gap: 10px;
+} 
+
+.form-heading-text {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.l-form input {
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+.l-form button {
+    border: none;
+    border-radius: 8px;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.l-form a {
+    color: aliceblue;
+}
+
+.l-form p {
+    margin-top: 10px;
+    margin-bottom: -5px;
+    font-size: 18px;
+}
+
+
+/* Forget Password form */
+.forget {
+    background-color: #333;
+
+}
+
+
+.forget-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forget-heading  h4 {
+    color: rgba(15, 231, 247, 0.973);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+   margin-top: 30px;
+   
+   
+}
+
+.forget-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px ;
+    color: aliceblue;
+    border: whitesmoke solid;
+    border-radius: 20px;
+    padding: 20px; 
+    box-shadow:  5px 8px 5px 8px whitesmoke;
+    margin-bottom: 150px;
+    margin-top: 80px;
+    gap: 10px;
+} 
+
+.password-heading-text {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-decoration-line: underline;
+    color: salmon;
+}
+
+.forget-form input {
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    height: 35px;
+    width: 330px;
+}
+
+.forget-form button {
+    border: none;
+    border-radius: 8px;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 330px;
+}
+
+.forget-form h6 {
+    margin-top: 30px;
+}
+
+
+
+/* Customer Service Page */
+.CS {
+    background-color: #333;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    
+}
+
+.contactus-col h4 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-decoration-line: underline;
+    color: salmon;
+}
+
+.cu-form-page {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    
+}
+
+.cu-form-page input {
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    height: 35px;
+    width: 330px;
+}
+
+.cu-form-page textarea {
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    height: 110px;
+    width: 330px;
+}
+
+.cu-form-page button {
+    border: none;
+    border-radius: 8px;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 330px;
+}
+
+.contact-details {
+    margin-top: 30px;
+    }
+
+.contact-details-col h6 {
+    color: rgba(15, 231, 247, 0.973);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+   margin-top: 30px;
+} 
+
+
+/* Register form */
+.register {
+    background-color: #333;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-heading  h4 {
+    color: rgba(15, 231, 247, 0.973);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+   margin-top: 30px;
+   
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 630px ;
+    color: aliceblue;
+    border: whitesmoke solid;
+    border-radius: 20px;
+    padding: 20px; 
+    box-shadow:  5px 8px 5px 8px whitesmoke;
+    margin-bottom: 150px;
+    margin-top: 80px;
+    gap: 10px;
+    /* align-items: center; */
+} 
+
+.create-heading-text {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.create-form-inner input {
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+}
+
+.create-form-inner {
+    gap: 10px;
+}
+
+.create-form-inner button {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.create-form-inner p {
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+.createotp {
+    background-color: #333;
+}
+
+.create-heading  h4 {
+    color: rgba(15, 231, 247, 0.973);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+   margin-top: 30px;
+}
+
+.create-otp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-otp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 300px ;
+    color: aliceblue;
+    border: whitesmoke solid;
+    border-radius: 20px;
+    padding: 20px; 
+    box-shadow:  5px 8px 5px 8px whitesmoke;
+    margin-bottom: 150px;
+    margin-top: 80px;
+    padding-top: 30px;
+}
+
+.create-otp-form label {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.create-otp-form input {
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+}
+
+.create-otp-form button {
+    border: none;
+    border-radius: 8px;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 250px;
+    margin-bottom: 30px;
+    
+}
+
+/* Privacy Policy page */
+.privacy {
+    background-color: #333;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+.privacy-text-heading {
+    color: rgba(15, 231, 247, 0.973);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+   margin-top: 20px;
+   text-align: center;
+}
+
+.privacy-col h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+   margin-top: 30px;
+   color: brown;
+}
+
+.privacy-col h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+   margin-top: 30px;
+   color: yellowgreen;
+
+}
+
