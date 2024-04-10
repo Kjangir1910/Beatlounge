@@ -20,7 +20,7 @@ const Home = () => {
             <p>
             Enjoy award-winning Beats sound with <br></br>wireless listening freedom and a sleek, <br></br> streamlined design with comfortable <br></br>padded earphones, delivering first-rate <br></br>playback.
             </p>
-            <Button className="main-button" variant="warning">Add To Cart</Button>
+            <Button className="main-button" variant="warning">Buy now</Button>
             </Col>
             </Row>
 
@@ -96,7 +96,7 @@ const Home = () => {
             With a comfortable and <br></br>adaptable case so that <br></br> you can store it whenever <br></br> you want, and keep your <br>
             </br>durability forever.
             </p>
-            <Button className="case-button" variant="warning">More Info</Button>
+            <Button className="case-button" variant="warning">More products</Button>
             </Col>
         </Row>
 
@@ -105,7 +105,7 @@ const Home = () => {
             <Col className="immense-left">
             <h1>Immense yourself in <br></br> your music</h1>
             <p>Buy Now, up to 40% off.</p>
-            <Button className="immense-button" variant="warning">Buy Now</Button>
+            <Button className="immense-button" variant="warning">More products</Button>
             
             </Col>
             

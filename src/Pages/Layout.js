@@ -36,8 +36,8 @@ return( <>
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/blogs">Blogs</Link>
-            <Link to="/">Products</Link>
-            <Button variant="primary" onClick={hendleClick}>Login</Button>
+            <Link to="/products">Products</Link>
+            <Button variant="primary" id='btnLogin' onClick={hendleClick}>Login</Button>
 
 
   
@@ -59,11 +59,11 @@ return( <>
         </Col>
         <Col className='Footer-b '>
          
-            <Link to="/">Products</Link>
-            <Link to="/">Headphone</Link>
-            <Link to="/">Earphone</Link>
-            <Link to="/">Earbuds</Link>
-            <Link to="/">Accessories</Link>
+            <Link to="/products">Products</Link>
+            <Link to="/headphone">Headphone</Link>
+            <Link to="/earphone">Earphone</Link>
+            <Link to="/earbuds">Earbuds</Link>
+            <Link to="/accessories">Accessories</Link>
          </Col>
         <Col className='Footer-c '>
         <Link to="/cservice">Support</Link>

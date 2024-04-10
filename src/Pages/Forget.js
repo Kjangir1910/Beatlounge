@@ -13,7 +13,7 @@ return (<>
         <Container fluid style={{padding:'0px'}} className="forget-container">
         <Row className="forget-heading">
                 <Col>
-                <h4>BeatLounge</h4>
+                <h4>BeatsLounge</h4>
                 </Col>
             </Row>
 

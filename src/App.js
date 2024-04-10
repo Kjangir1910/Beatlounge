@@ -11,6 +11,13 @@ import Cservice from './Pages/Cservice';
 import Register from './Pages/Register';
 import Createotp from './Pages/Createotp';
 import Privacy from './Pages/Privacy';
+import Products from './Pages/Products';
+import Headphone from './Pages/Headphone';
+import Earphone from './Pages/Earphone';
+import Earbuds from './Pages/Earbuds';
+import Accessories from './Pages/Accessories';
+import Productpage1 from './Pages/Productpage1';
+import Productpage2 from './Pages/Productpage2';
 
 function App() {
   return (
@@ -26,6 +33,13 @@ function App() {
     <Route path='cservice'element={<Cservice/>} />
     <Route path='createotp'element={<Createotp/>} />
     <Route path='privacy'element={<Privacy/>} />
+    <Route path='products'element={<Products/>} />
+    <Route path='headphone'element={<Headphone/>} />
+    <Route path='earphone'element={<Earphone/>} />
+    <Route path='earbuds'element={<Earbuds/>} />
+    <Route path='accessories'element={<Accessories/>} />
+    <Route path='productpage1' element={<Productpage1/>} />
+    <Route path='productpage2' element={<Productpage2/>} />
     
 
   </Route>

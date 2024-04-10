@@ -11,7 +11,7 @@ const About = () => {
         <Container fluid style={{padding:'0px'}} className="About"> 
         <Row className="welcome" >
             <Col className="welcomesection">
-        <h2>Welcome to BeatLounge</h2>
+        <h2>Welcome to BeatsLounge</h2>
         <p>
         At BeatLounge, we're more than just an e-commerce platform — we're a community-driven marketplace dedicated to enhancing your lifestyle and enriching your shopping experience. Our journey began with a vision to revolutionize online shopping by offering not just products, but solutions that simplify and elevate your everyday life.
         </p>
